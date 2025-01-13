@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: azure;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 2vh;
+    font-size: 1.2rem;
+}
+
+.nav a:hover {
+    color: rgba(255, 153, 0, 0.938);
+}
+
+h1 {
+    margin-top:30vh;
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+span {
+    color: rgba(255, 153, 0, 0.938);
+}
+
+h1 p {
+    margin-top: 1vh;
+    font-weight: lighter;
+}
+
+section {
+    padding: 3vh 2vh;
+}
+
+#about, #PROJECTS, #CERTIFICATES {
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#image {
+    flex-basis: 35%;
+    margin-bottom: 20px;
+}
+
+#image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#about-text {
+    flex-basis: 60%;
+   
+}
+
+#about-text h1 {
+    color: white;
+}
+
+#about-text p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: antiquewhite;
+    text-align:justify;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.contant {
+    flex-basis: 45%;
+    text-align: left;
+}
+
+.contant:hover {
+    color: rgba(255, 153, 0, 0.938);
+}
+h3{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#PROJECTS{
+    margin-top: 70px;
+}
+.project-container {
+    margin:20px auto ;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-list {
+    flex: 1;
+    max-width: 30%;
+    min-width: 250px;
+    background-color: rgba(31, 30, 30, 0.9);
+    border: 1px solid rgba(255, 153, 0, 0.938);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 153, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    color: azure;
+}
+
+.project-list h3 {
+    margin-bottom: 10px;
+    color: rgba(255, 153, 0, 0.938);
+}
+
+.project-list p {
+    color: antiquewhite;
+}
+#CERTIFICATES{
+    margin-top: 70px;
+   
+}
+.certificate-container {
+    
+    margin: 20px auto;
+    width: 80%;
+}
+.certificate-container ul {
+    list-style-type: none; 
+    padding: 0;
+    text-align:justify;
+}
+.certificate-list {
+    
+    color: azure;
+    font-size: 1.2rem;
+    margin: 10px 10px;
+    padding: 17px;
+    
+}
+
+.certificate-list span {
+    color: rgba(255, 153, 0, 0.938);
+   
+}
+
+footer {
+    background-color: rgb(31, 30, 30);
+    padding: 20px;
+    text-align: center;
+    color: azure;
+    margin-top: 20px;
+}
+
+footer a {
+    color: rgba(255, 153, 0, 0.938);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav a {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .background {
+        height: 50vh;
+        width: 50vh;
+        top: 10vh;
+    }
+
+    #image {
+        flex-basis: 100%;
+    }
+
+    #about-text {
+        flex-basis: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .project-list {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .contant-list ul{
+        margin-left: 30px;
+    }
+    .nav a {
+        margin: 0 5px;
+    }
+
+    .certificate-container {
+        width: 95%;
+    }
+
+    .project-list {
+        padding: 15px;
+    }
+    #about-text p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+        margin: 10px; /* Adjust margins for better spacing */
+    }
+
+    h1 span {
+        font-size: 1.2rem; /* Reduce the size of the span for consistency */
+    }
+
+    h1 p {
+        font-size: 1rem; /* Reduce the size of the paragraph text */
+    }
+    h4 {
+        font-size: 0.9rem; /* Adjust font size for readability */
+        line-height: 1.5; /* Add spacing between lines */
+        text-align: center; /* Center align for better presentation */
+        padding: 10px; /* Add some padding for better spacing */
+        word-wrap: break-word; /* Ensure text doesn't overflow the screen */
+    }
+
+    h4 i {
+        margin-right: 5px; /* Add spacing between icons and text */
+    }
+}
